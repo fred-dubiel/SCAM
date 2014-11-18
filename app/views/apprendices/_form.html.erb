@@ -1,0 +1,41 @@
+<%= form_for(@apprendice) do |f| %>
+  <% if @apprendice.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@apprendice.errors.count, "error") %> prohibited this apprendice from being saved:</h2>
+
+      <ul>
+      <% @apprendice.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :warname %><br>
+    <%= f.text_field :warname %>
+  </div>
+  <div class="field">
+    <%= f.label :photo %><br>
+    <%= f.file_field :photo %>
+  </div>
+  <div class="field">
+    <%= f.label :allergy %><br>
+    <%= f.text_area :allergy %>
+  </div>
+  <div class="field">
+    <%= f.label :medicines %><br>
+    <%= f.text_area :medicines %>
+  </div>
+  <div class="field">
+    <%= f.label :obsevation %><br>
+    <%= f.text_area :obsevation %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

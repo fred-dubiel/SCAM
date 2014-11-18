@@ -1,0 +1,2 @@
+module ApprendicesHelper
+end

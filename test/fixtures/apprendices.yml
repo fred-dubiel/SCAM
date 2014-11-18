@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  warname: MyString
+  photo: 
+  allergy: MyText
+  medicines: MyText
+  obsevation: MyText
+
+two:
+  name: MyString
+  warname: MyString
+  photo: 
+  allergy: MyText
+  medicines: MyText
+  obsevation: MyText

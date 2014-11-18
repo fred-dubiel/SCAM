@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @apprendice.name %>
+</p>
+
+<p>
+  <strong>Warname:</strong>
+  <%= @apprendice.warname %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= @apprendice.photo %>
+</p>
+
+<p>
+  <strong>Allergy:</strong>
+  <%= @apprendice.allergy %>
+</p>
+
+<p>
+  <strong>Medicines:</strong>
+  <%= @apprendice.medicines %>
+</p>
+
+<p>
+  <strong>Obsevation:</strong>
+  <%= @apprendice.obsevation %>
+</p>
+
+<%= link_to 'Edit', edit_apprendice_path(@apprendice) %> |
+<%= link_to 'Back', apprendices_path %>

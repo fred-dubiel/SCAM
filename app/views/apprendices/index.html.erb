@@ -1,0 +1,35 @@
+<h1>Listing apprendices</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Warname</th>
+      <th>Photo</th>
+      <th>Allergy</th>
+      <th>Medicines</th>
+      <th>Obsevation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @apprendices.each do |apprendice| %>
+      <tr>
+        <td><%= apprendice.name %></td>
+        <td><%= apprendice.warname %></td>
+        <td><%= apprendice.photo %></td>
+        <td><%= apprendice.allergy %></td>
+        <td><%= apprendice.medicines %></td>
+        <td><%= apprendice.obsevation %></td>
+        <td><%= link_to 'Show', apprendice %></td>
+        <td><%= link_to 'Edit', edit_apprendice_path(apprendice) %></td>
+        <td><%= link_to 'Destroy', apprendice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Apprendice', new_apprendice_path %>
